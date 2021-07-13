@@ -190,7 +190,10 @@ class LoadDocumentData(object):
         self.x_origin = data["X"]
         self.y_origin = data["y"]
         if isinstance(params.anomal_rate, str):
-            self.anomal_rate = eval(params.anomal_rate)
+            if params.anomal_rate == 'default':
+                self.anomal_rate = 0.05
+            else:
+                self.anomal_rate = eval(params.anomal_rate)
         elif isinstance(params.anomal_rate, float):
             self.anomal_rate = params.anomal_rate
         self.class_num = len(list(set(self.y_origin)))
