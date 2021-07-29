@@ -1,4 +1,4 @@
-# SGAE implimentation in PyTorch
+# SGAE implementation in PyTorch
 
 ## Project details
 This repository contains a PyTorch implementation of the score-guided autoencdoer (SG-AE) presented in "Enhancing Unsupervised Anomaly Detection with Score-guided Network"
