@@ -20,7 +20,7 @@ This repository contains a PyTorch implementation of the score-guided autoencdoe
 
 ## How to deploy
 ```
-python main.py --[Parameter set] 
+python sgae_main.py --[Parameter set] 
 ```
 
 ## Links to datasets
