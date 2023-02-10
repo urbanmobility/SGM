@@ -52,6 +52,7 @@ class SGAE(nn.Module):
         # scoring network
         self.scores = nn.Sequential()
         self.scores.add_module(f'scores1', nn.Linear(hidden_dim[-1], 10))
+        self.scores.add_module(f'relu', nn.ReLU())
         self.scores.add_module(f'scores2', nn.Linear(10, 1))
         
         
